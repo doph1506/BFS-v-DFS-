@@ -1,0 +1,583 @@
+<html>
+<head>
+<title>PowerDesigner Release Notes</title>
+<style>
+<!--
+   h1 {border-width: 1; font-family: Verdana, Arial, Helvetica, sans-serif}
+   h2 {border-width: 1; font-family: Verdana, Arial, Helvetica, sans-serif;  font-size: 18 }
+   body {font-family: "Verdana", "Arial", "Helvetica", sans-serif; font-size: 12 ;}
+-->
+</style>
+</head>
+
+<body>
+
+<h1>Release Notes for PowerDesigner[R] Version 15.2</h1>
+
+<p>(c) 2010 Sybase, Inc. and its subsidiaries. All rights reserved.
+<p>Updated February 24th 2010
+
+<p>Thank you for choosing PowerDesigner as your design tool!  
+<br>Please read this document to learn about last minute updates to the product and documentation.
+<br> 
+<br>This version is certified for the following operating systems:
+<br>Windows 2000 SP4
+<br>Windows XP SP1
+<br>Windows Vista
+<br>Windows Server 2003
+<br>Windows Server 2008
+<br>Windows Seven
+</p>
+
+<h2>Installation</h2>
+<!-- Added for Beta 
+PowerDesigner 15.1 Beta will run until June 2009.
+-->
+<!-- removed for beta -->
+<p>Even if you have purchased only some of the PowerDesigner modules, you can install the others in stand-alone mode for a 15 days evaluation period.
+<!-- -->
+<p>Non-administrator users may receive a warning message during installation. Setup requires write access on certain directories and on the registry that non-administrator users may not have. Setup can continue despite this warning message but will fail if the user does not have the required rights.
+<br>
+<!-- removed for beta -->
+<br>PowerDesigner supports the Sybase Asset Management (SYSAM) system used by other Sybase products, which provides various forms of license. You can install PowerDesigner in trial mode, or with a stand-alone local, stand-alone served, or floating license. In stand-alone served and floating mode, be sure to indicate both server name and port. Even if optional, it is better to indicate the port number, the default value for which is 27000.
+<br>
+<!-- -->
+<!-- Added for Beta 
+<br>PowerDesigner 15.1 Beta requires the Microsoft .NET Framework 2.0 SP1. This framework will be installed during Beta setup.
+-->
+<br>Installation on Windows 2000 requires that all Windows security patches are installed.
+<br>In particular, you need to install a specific security fix (<A HREF=http://www.microsoft.com/downloads/details.aspx?FamilyId=0692C27E-F63A-414C-B3EB-D2342FBB6C00&displaylang=en>Security Update for Windows 2000 KB835732</A>) which is a requirement for .Net 2.0 sp1 installed by PowerDesigner.
+<br>
+
+<h2>Installation alongside previous versions of PowerDesigner</h2>
+PowerDesigner 15.2 will automatically update any instance of PowerDesigner 15.0 or 15.1.<br>
+<!-- removed for beta -->
+<!--
+<br>Before installing PowerDesigner 15.2 you must uninstall PowerDesigner 15.1 Beta.
+-->
+<!--
+<br>Before installing PowerDesigner Portal 15.2 you must uninstall PowerDesigner Web Browser 15.1 Beta.
+-->
+<br>PowerDesigner Portal is the new name for the PowerDesigner Repository Web Browser. Before installing the PowerDesigner Portal 15.2 you must uninstall the PowerDesigner Repository Web Browser 15.0. Upgrades from an existing 15.1 installation are supported.
+<!-- -->
+<!-- added for beta 
+PowerDesigner 15.1 Beta cannot cohabit with PowerDesigner 15.0. PowerDesigner 15.1 Beta will automatically update a PowerDesigner 15.0 installation. It must be installed on a computer that does not already have a PowerDesigner 15.0 installed.
+<p>You must not update a 15.0 production repository with PowerDesigner 15.1 Beta.
+<br>
+<br>Models saved with PowerDesigner 15.1 Beta may be corrupted if opened in the PowerDesigner 15.1 GA version.
+<br>
+
+<!-- removed for minor version 
+<p>PowerDesigner 12.5 (and lower) and PowerDesigner 15.0 can coexist on the same computer without any major problems. Do not install PowerDesigner 15 in the same directory as PowerDesigner 12.
+-->
+
+<p>The first time you open version 15.1 or lower models in PowerDesigner 15.2, they will be updated to version 15.2. This process takes longer than the standard time needed to open a model saved with version 15.2</p>
+<p>Models saved with version 15.2 may be corrupted if they are opened in version 15.1 or lower.
+<br>
+
+<h2>New features in PowerDesigner 15.2</h2>
+
+<ul>
+<li>Common features
+     <ul>
+     <li>Improvements to Metamodel Extensions
+         <ul>
+         	<li>Exclude standard metaclasses from the interface 
+         	<li>Specify default columns when displaying collections 
+         	<lI>Specify display labels for custom forms and collections 
+         	<li>Specify a format for text extension
+         	<li>Specify contextual help for custom forms 
+	 		<li>Specify icons on tool buttons calling methods on custom forms 
+         	<li>Finer-grained control over the format and content of custom symbols 
+     	</ul>
+     <li>Generate Objects to Other Models
+     <li>Excel Import
+     <li>Autosave
+     <li>Naming Conventions Enhancements
+     <li>Dependency Matrix Enhancements
+		<ul>
+			<li>Show column header vertically
+			<lI>Excel export
+			<li>Enhance Filter capabilities
+			<li>Better visibility to extensions
+		</ul>
+     <li>RTF Formatting Preserved in HTML Reports
+     <li>New Object Mappings (LDM-OOM, LDM-PDM, LDM-CDM)
+     <li>More Diagrams with Customizable Display Preferences (OOM/CDM/LDM)
+     <li>Support Eclipse 3.5
+     </ul>
+<li>Enterprise Architecture Model
+     <ul>
+     <li>Cluster Servers and Virtual Machines
+     </ul>
+<li>Data Models
+     <ul>
+     <li>Sentence Generation from Relationships
+     <li>Sybase IQ Information Lifecycle Management
+     <li>Import Erwin 7.3 files
+     <lI>Batch Import of ERwin Files
+     <lI>Generate PDMs from XSMs
+     <li>New or enhanced database support:
+          <ul>
+          <li>Sybase IQ v15.2
+          <li>Sybase ASE v15.5 
+          </ul>
+     </ul>
+<li>Information Liquidity Model
+     <ul>
+     <li>Replication Server v15.2/15.5 Enhancements
+		<ul>
+			<li>Simplified connections to non-ASE replicate databases through connection profiles and connectors 
+			<li>High Volume Adaptive Replication (HVAR) 
+			<li>Generation of alter replication definition scripts 
+			<li>Replication of SQL Statements (SQLMDL) 
+		</ul>
+     </ul>
+<li>Business Process Model
+	<ul>
+	<li>Link BPM data to LDM entities and attributes
+	</ul>
+<li>Repository 
+     <ul>
+     <li>Extensions Visible in Repository Browser and PowerDesigner Portal 
+     <li>Save Searches in PowerDesigner Portal
+     <li>Propose extraction of referenced model
+     </ul>
+</ul>
+
+<h2>Database and Language support</h2>
+<ul>
+<!-- removed for beta -->
+New features require an auto-fix of targets saved with versions before 15.2.
+<br>For better performance, we recommend that you re-save your own targets with PowerDesigner 15.2.   
+<br><br><li><strong>Modified Database Definition files between 15.1 and 15.2</strong>
+
+<br>All database Definition files have been modified.
+<br><br>The following DBMS versions are newly supported:
+<ul>
+  <li>Sybase IQ v15.2 </li>
+  <li>Sybase ASE v15.5 </li>
+</ul>
+
+<br>The following DBMS versions are deprecated:
+<ul>
+  <li>Microsoft Access 95 & 97 (Deprecated)
+  <li>IBM DB2 5.x for OS/390 (Deprecated)
+  <li>IBM DB2 UDB 5.x Common Server (Deprecated)
+  <li>MySQL 3.22 (Deprecated)
+  <li>MySQL 3.23 (Deprecated)
+  <li>ORACLE Version 8 (Deprecated)
+  <li>ORACLE Version 8i (8.1.5) (Deprecated)
+  <li>Microsoft SQL Server 7.x (Deprecated)
+  <li>Sybase AS Anywhere 7 (Deprecated)
+  <li>Sybase AS Anywhere 8 (Deprecated)
+  <li>Sybase AS Enterprise 11.0 (Deprecated)
+  <li>Sybase AS Enterprise 11.5-11.9 (Deprecated)
+  <li>Sybase AS IQ 12.0 (Deprecated)
+  <li>Sybase AS IQ 12.4.3 (Deprecated)
+</ul>
+
+<br>The Logical database definition file has been removed, and is replaced by the new Logical Data Model module.
+<br>PowerDesigner v12.5 (and older) PDMs targeting the Logical DBMS will be transformed into an LDM when you open them in v15.0 and higher.
+<br>If you want to continue to use a physical data model for LDM modeling, you can target the ANSI DBMS, or copy the Logical DBMS provided with version 12.5 to the 15 DBMS resource files directory to reuse it.
+
+<br><br>
+<!-- -->
+
+<li><strong>Customized DBMS</strong>
+<br>If you have customized your DBMS file to take advantage of the mechanism of user-defined queries during reverse engineering, you must read the "Extension Mechanism for Live Database Reverse Engineering Queries" section in the chapter "DBMS Resource File Reference" in the Customizing and Extending PowerDesigner manual, and modify your DBMS as described.
+<br><br>
+
+<li><strong>Customized resources and repository</strong>
+<br>All customized resources must be opened and saved in PD 15.1 or above to be properly recognized as resource files by the repository.
+<br><br>
+
+<li><strong>Connection to a Unicode database</strong>
+<br>For some databases, you may have to set up charset information in the ODBC drivers dialog when you connect to a Unicode database.
+<br>Depending on the character set that the target database uses, you may have to change the charset attribute of your ODBC data source.
+<BR>For example, to connect to a Unicode Sybase Adaptive Server Enterprise database, you must indicate in the charset field the code of the Unicode character set (in this case "utf8").
+<br>Each ODBC driver has its own tuning parameters to indicate the character set. This information is located in the driver help file. Search for the keywords "charset" or "character set" in the ODBC driver help file.
+<br><br>
+
+<li><strong>"Not Certified" resource files</strong>
+<br>Some resource files are delivered with "Not Certified" in their names. 
+<br>Sybase will perform all possible validation checks, but we do not maintain specific environments to fully certify these resource files. We will support them by accepting bug reports and providing fixes as per standard policy, with the exception that there will be no final environmental validation of the fix. You are invited to assist us by testing fixes and reporting any continuing inconsistencies.
+<br><br>
+
+</ul>
+
+</ul>
+
+<h2>Eclipse support</h2>
+<ul>
+<li><strong>Eclipse versions</strong>
+<br>A PowerDesigner plug-in supports Eclipse 3.2, 3.3, 3.4 and 3.5.
+<br>The Eclipse plug-in requires JDK 1.5.
+<br><br>
+<li><strong>Limitation of PowerDesigner Eclipse plug-in</strong>
+<br>The New Model dialog for Eclipse is different and does not support category customization.
+<br><br>
+<!-- removed for beta -->
+<li><strong>Trial expiration under Eclipse</strong>
+<br>If you are using a trial version of PowerDesigner as an Eclipse plug-in and the trial period has expired, you will have to launch the PowerDesigner executable from its home directory to reactivate a license.
+<br><br>
+<!-- -->
+</ul>
+
+<h2>Microsoft Visual Studio 2005 and 2008 support</h2>
+<ul>
+
+<li><strong>PowerDesigner trial and Microsoft Visual Studio</strong>
+<br>If you are using a trial version of PowerDesigner as a Microsoft Visual Studio plug-in and the trial period has expired, a dialog will appear when you launch Visual Studio asking you to install a valid PowerDesigner license.
+<br>In order to avoid this dialog, you must close all PowerDesigner views in Visual Studio.
+<br><br>
+<li><Strong>Visual Studio Team Foundation 2008</Strong>
+<br>
+Visual Studio Team Foundation 2008 is not supported with PowerDesigner 15.x
+<br><br>
+<li><strong>Limitation of PowerDesigner Visual Studio plug-in</strong>
+<br>The New Model dialog for Visual Studio is different and does not support category customization.
+
+</ul>
+
+<h2>Certification</h2>
+For a complete list of the PowerDesigner product-platform certifications for databases, languages, and other targets and features, see the <A HREF=http://certification.sybase.com/ucr/search.do>Sybase Certification site</A>.
+
+<h2>Additional information and known issues</h2>
+<ul>
+<li><strong>Extensions</Strong>	
+<br>All extensions have to be resaved to take advantage of SAM selection
+<br><br>
+<li><strong>Symbols changes</Strong>
+<br>More symbols are generic now and you may see some size changes when you open models saved with previous releases.
+<br><br>
+<li><strong>J# redistributable</Strong>
+<br>PD redistributes MS Visual J# Redistributable Package 2.0 for use in the autolayout function
+<br>If J# is removed, PD can still be used but only a basic autolayout feature is available.
+<br><br>
+
+<li><strong>PowerDesigner installed on a network drive</strong>
+<br>When PowerDesigner is run over a network, you must authorize network execution  before running it on a client computer.
+<br>Use the caspol executable located in the Microsoft.net directory and run the following command
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;caspol -m -ag LocalIntranet_Zone -url \\&lt;ServerName&gt;\&lt;FolderName&gt;\* FullTrust -n "&lt;Name&gt;" -d "&lt;Description&gt;"
+
+<br>
+<br>You must run PowerDesigner in administration mode (even if your user is an administrator) in order to be able to install a plug-in through Tools > General options > Add-ins.
+
+<br><br>
+<li><strong>PowerDesigner project and file system</Strong>
+<BR>PowerDesigner project content is not synchronized with the file system. It is a logical view of the project independent of the files' locations.
+<bR>When used as a plug-in in Eclipse or Visual Studio, PowerDesigner project content is not synchronized with project content in Eclipse or Visual Studio.
+
+<br><br>
+<li><strong>Changes in metamodel and API since 15.0</Strong>
+<br><br>
+<ul>
+<li>Removals
+BasePhysicalPackageOptions.ReverseCountTableRow
+BasePhysicalPackageOptions.DefaultOwners
+
+<li><b>Better access to comparison in VBS</b>
+<br>You can now create a helper class with a method CreateComparisonHelper(newobject) available on models and targets.
+<br><br>This class currently presents two methods:
+<br>&nbsp;&nbsp;&nbsp;int GetDifferencesCount()
+<br>&nbsp;&nbsp;&nbsp;bool GetDifferenceInformation(in int pos, out int diffKind, out object OldObject, out object NewObject, out string MemberPublicName, out string OldValue, out string NewValue)
+<br><br>Example:
+<br>&nbsp;&nbsp;&nbsp;Set M1 = OpenModel("c:\temp\ConceptualDataModel_1.cdm")
+<br>&nbsp;&nbsp;&nbsp;Set M2 = OpenModel("c:\temp\ConceptualDataModel_2.cdm")
+<br>&nbsp;&nbsp;&nbsp;Set cmp = M1.CreateComparisonHelper(M2)
+<br>&nbsp;&nbsp;&nbsp;for i = 0 to cmp.GetDifferencesCount() - 1
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   dim oldObj, newObj, diffKind, member, oldVale, newVale
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   cmp.GetDifferenceInformation i, diffKind, oldObj, newObj, member, oldVale, newVale 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   dim oldDsc, newDsc
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   oldDsc = "?"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   if not oldObj is nothing then
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      oldDsc = oldObj.ShortDescription
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   end if
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   newDsc = "?"
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   if not newObj is nothing then
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      newDsc = newObj.ShortDescription
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   end if
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   output "Diff " & Cstr(i) & " old=" & oldDsc & " new=" & newDsc & " member=" & member & " <br>&nbsp;&nbsp;&nbsp;old=" & oldVale & " new=" & newVale
+<br>&nbsp;&nbsp;&nbsp;next
+<br>&nbsp;&nbsp;&nbsp;cmp.Delete
+<br>&nbsp;&nbsp;&nbsp;set cmp = nothing
+
+<br><br>
+<li><b>Replacement of a shortcut by a copy of the source object</b>
+<br>You can use this method on any shortcut to remove the shortcut, replace it by a copy of the source object, and reconnect all links properly.
+<br><br>Use the method Shortcut.ReplaceByCopyOfTargetObject
+<br><br>
+<li><b>Check out any repository version of a document</b>
+<br>&nbsp;&nbsp;&nbsp;RepositoryBaseDocument.CheckOutOldVersionToFile
+<br><br>Example:
+<br>&nbsp;&nbsp;&nbsp;Set D = RepositoryConnection.childObjects.Item(1)
+<br>&nbsp;&nbsp;&nbsp;D.CheckOutOldVersionToFile "2.1.1", "c:\temp\oldversion.pdm"
+
+
+<br><br>
+<li><b>Get the list of child objects having a stereotype</b>
+<br>Use new Method ExtensibleObject.GetCollectionByStereotype
+<bR><br>Example :
+<br>&nbsp;&nbsp;&nbsp;Set collection = ActiveModel.GetCollectionByStereotype("RuleStereotype")
+<br>&nbsp;&nbsp;&nbsp;Set newRule = collection.CreateNew() ' Creates a stereotyped business rule
+<br>&nbsp;&nbsp;&nbsp;' Works also with GetCollectionByName but requires &lt;&lt; &gt;&gt;
+<br>&nbsp;&nbsp;&nbsp;Set collection = ActiveModel.GetCollectionByName("&lt;&lt;RuleStereotype&gt;&gt;")
+<br><br>
+<li><b>Research an object by name or code</b> 
+<br>Use the method NamedObject.FindChildByName & FindChildByCode
+<br><br>Example
+<br>&nbsp;&nbsp;&nbsp;Set 1rstFound = ActiveModel.FindChildByName("Partition_10", Cls_ExtendedObject, "Partition") 
+<br>&nbsp;&nbsp;&nbsp;' last parameter is the optional stereotype
+<br>&nbsp;&nbsp;&nbsp;Set 2ndFound = ActiveModel.FindChildByName("Partition_10", Cls_ExtendedObject, "Partition", 1rstFound) ' search another one with same name
+<br><br>
+<li><b>Change the custom shape of a symbol</b>
+<br>Set the attribute CustomPictureFile of SolidSymbol to a path inside picture library
+<br><br>Example<br>
+
+<br>&nbsp;&nbsp;&nbsp;dim sym
+<br>&nbsp;&nbsp;&nbsp;for each sym in ActiveDiagram.Symbols
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sym.CustomPictureFile = "piclib://Enterprise Architecture.piclib#Business\Balance.png"
+<br>&nbsp;&nbsp;&nbsp;next
+<br>
+<br>This works for all kinds of pictures (files, piclib, office, DLL, ...).
+<br>For piclib & office, the URL syntax is independent of file location, which makes it easier to use the same VBScript on different machines.
+<br>If you want to know the URL syntax for a given picture, you can copy the URL in the Change Image dialog: the name field value can be copy/pasted.
+<br>
+<br>
+
+</ul>
+<br><br>
+<li><strong>Connection profile limitations</strong>
+<br>Supported and tested native drivers are the following:
+<ul>
+<li>Sybase ASE 12.5 and 15
+<li>Oracle 9, 10 and 11
+<li>Microsoft SQlServer 2000, 2005 and 2008
+<li>JDBC (Sybase ASE drivers)
+</ul>
+
+<br>Support for Direct Connect, ADO and OLE DB connection have been removed from PD 15.x.
+<br>
+<br>Reverse engineering cannot be performed through JDBC for the following databases:
+<ul>
+    <li>Microsoft Access 2000
+    <li>Microsoft Access 95 & 97 (Deprecated)
+    <li>ADABAS D
+    <li>ALLBASE/SQL G.1 (Not Certified)
+    <li>ANSI Level 2
+    <li>IBM DB2 5.x for OS/390 (Deprecated), UDB 5.x Common Server (Deprecated), UDB 6.x Common Server (Not Certified)
+    <li>INFORMIX SQL 8.x (Not Certified)
+    <li>MySQL 3.22 (Deprecated), 3.23 (Deprecated), 4.0
+    <li>NonStop SQL (Not Certified)
+    <li>ODBC 3.0 
+    <li>Microsoft SQL Server 7.x (Deprecated)
+</ul>
+<br>A JDBC connection requires that the path to the bin directory of JRE is included in the PATH environment variable.
+<br>If you must connect using JDBC to several databases using different JDBC drivers, the path to all JDBC drivers must be added to Classpath.
+<br><br>
+<li><strong>Change target DBMS Oracle 10 to Oracle 11.</strong>
+<br>The implementation of cluster indexes in the Physical Data Model has changed between Oracle 10 and Oracle 11. In order to maintain cluster index definition, you must not use the Change Target feature to transform an Oracle 10 PDM into an Oracle 11 PDM. You must instead use a PDM to PDM generation and allow transformations (in the Detail tab). <br><br>The index cluster will be transformed into the new implementation during this process.
+
+<br><br>
+<li><Strong>Change in user-defined type representation for Microsoft SQLServer</Strong>
+<br>In PowerDesigner 12.5 and before, Abstract Data Types could be used to generate aliases to basic types or CLR types. They can now only be used to create CLR types, and aliases must be created using Domains.
+<br><br>
+
+<li><Strong>Checking out 12.5 logical model from repository</strong>
+<br>The checking-out of Logical 12.5 PDM will no longer convert the PDM into LDM. The conversion is now done during the first opening after checkout.
+<br><br>
+
+
+<!--
+<li><strong>Opening Oracle PDM models containing views from pre-12.0 version</Strong>
+<br>Related to CR #449810.
+<br>This bug was caused by the mismatch between views and Oracle packages during 
+the reverse engineering by script.
+In previous versions, the Usage attribute was always set to "query only" 
+(Read-Only) by PowerDesigner, no matter the usage of the view in Oracle. It will be now generated according to the Oracle syntax.
+<br>We have added an auto-update of the model when opening it so that only views containing the "with read only" syntax in the query are actually kept read-only. All others have this attribute reset and by default will be updateable.
+Views with the Usage attribute set to "With check options" are not affected by the auto-
+update.
+<br>In the event that the "query only" flag must be kept, even if SQL Order means the opposite, you must run the following VBS on the model before opening the model with version 12.5. This VBS adds the read-only syntax on the view sql query if it is not set and the view usage attribute is set to "Query only" (not recommended.)
+<br>
+<br><<
+<br>' This VBScript browse all views from model and
+<br>' updates the sql query to match the "query only" attribute of the view
+<br>UpdateViewQuery ActiveModel
+<br>
+<br>Sub UpdateViewQuery(pPackg)
+<br>   Dim V, s, p
+<br>   for each V in pPackg.Views
+<br>      if (V.ViewUsage = 0) then ' 0: query only
+<br>         s = replace(V.SqlQuery, ";", "")
+<br>         s = replace(s, vbTab, "")
+<br>         s = replace(s, vbLf, "")
+<br>         s = replace(s, vbCr, "")
+<br>         s = replace(s, " ", "")
+<br>         if (Right(lcase(s), Len("WithReadOnly")) <> "withreadonly") then
+<br>            V.SqlQuery = V.SqlQuery & " with read only"
+<br>         end if
+<br>      end if
+<br>   Next
+<br>   For each p in pPackg.Packages
+<br>      UpdateViewQuery p
+<br>   Next
+<br>End Sub
+<br>>>
+<br><br>
+-->
+
+<li><strong>Reverse engineering of Where clause from Replication Server in the Information Liquidity Model</strong>
+<br>For Replication Server 12.5 or 12.6, the reverse engineering of article and subscription "where" clauses can be incomplete if the columns involved in these clauses have the following data types (the result is different depending on whether RSSD is deployed on an ASA or ASE server):
+<br>ASA RSSD:
+<ul><li>smallmoney
+<li>datetime
+<li>date
+<li>time
+<li>smalldatetime
+<li>numeric
+<li>decimal
+<li>float</ul>
+<br>ASE RSSD:
+<ul><li>numeric
+<li>decimal</ul>
+<br><br>
+
+<li><strong>DBMS-Specific Physical option tab in Physical Data Model</strong>
+<br>In some cases, the new DBMS-specific tab for physical options in the PDM will not show all possible physical options. If you need to use one of the missing options, you must use the standard physical options tab.
+<br><br>
+
+<!--
+<li><strong>Repository on MBCS or Unicode database</strong>
+<br>When you are connecting to a Unicode or MBCS database and consolidating models with MBCS data, you must have a specific registry key setup in order to properly take into account the size of each character in the database. 
+<br>The "MaxBytesPerChar" value indicates the number of bytes used to save a character in the database.  
+<br>This entry is automatically installed during setup if your code page is different from Latin Western characters (ie cp1250, cp1252 or cp1254). If this is not the case, but you want to connect to a Unicode or MBCS database to save MBCS data, you will need to set this key manually.<br>
+<br>[HKEY_LOCAL_MACHINE\Software\Sybase\PowerDesigner 15\Repository]
+<br>"MaxBytesPerChar"="3" 
+<br>The MaxBytesPerChar value depends on the database charset:
+<ul><li>For SBCS (Single Byte Character Set), you do not need the registry key or you can set its value to "1"
+<li>For DBCS (Double Byte Character Set), you must set the registry key value to "2"
+<li>For Unicode (or MBCS, ie. Multiple Byte Character Set), you must set the registry key value to "3" (or more, in rare cases)</ul>
+<br><br>
+-->
+
+<li><strong>Issues with ASE ODBC Driver and PD repository</strong>
+<br>When using an ASE database for the PD repository with an ASE ODBC driver, you must select the "Enable Dynamic Prepare" option on the "Connection" tab.
+<br><br>When using an ASE 15 database for the PD repository with an ASE ODBC driver, documents consolidated will be extracted and truncated per package of 32k each section of 1 MB.
+<br>For example:
+<ul>
+<li>PT (1 165 KB); size after extraction = 64 KB 
+<li>JPG (305 KB); size after extraction = 32 KB 
+<li>DOC. (2 803 KB); size after extraction = 96 KB 
+<li>PDF (4 695 KB); size after extraction = 160 KB 
+<li>ZIP (6 574 KB); size after extraction = 224 KB 
+<li>PDF (13 646 KB); size after extraction = 448 KB 
+</uL>
+<br>Work around is to increase the value of the parameter Text Size on Advanced page of the ODBC driver ASE 15. 
+<br><br>
+
+<li><strong>Drag/drop from browser to diagram</strong>
+<br>Drag/drop from browser to diagram will always create a shortcut. The general option "Drag/drop default action" that was applied in version 12.0 and before is now only used in drag/drop targeting the browser.
+<br>If you actually want to move an object by drag/drop targeting a diagram, you must use the key combination Shift + Drag/Drop
+<br><br>
+
+<li><strong>List report</strong>
+<br>Multicolumn sort is not available. Sort uses only the first column.
+<br><br>
+
+<li><strong>HTML template for list report</strong>
+<br>List reports generated in HTML format are based on a template. The interface does not allow you to easily change this template. The template used is the default one used for reports.
+<br>In order to modify the HTML template used when generating a list report in HTML format, you must modify the default template for Report.
+<br>Open the property sheet of any report, select the template you want to use, click the button "Set as default" and cancel.
+<br><br>
+
+
+<li><strong>Specific behavior under Windows Vista</Strong>
+<BR>The Execute command may not be able to run commands properly unless PowerDesigner has been launched in Administration mode under Vista.
+<br><br>
+
+<li><strong>License server and Vista</strong>
+<br>The license server, Flexlm, cannot be run as a service under Vista. You must run it as an executable by double-clicking on it in a file explorer.
+<br><br>
+
+<li><strong>Limitations on Windows 64-bit platforms</Strong>
+<br>Although PowerDesigner is not officially supported on Windows 64-bit platforms, PowerDesigner can run on these platforms.
+<br>Setup will not install the x64 version of .Net framework 2.0 SP1. You should install .Net framework 2.0 SP1 (x64) separately to be able to use the following PowerDesigner features : auto-layout, import/export XMI, import Microsoft Visio. 
+<br><br>
+
+<li><strong>Limitations on Windows 2000 platforms</Strong>
+<br>The new improved RTF support is not available on Windows 2000 platforms.
+<br><br>
+<li><strong>License server and PowerDesigner on same computer</strong>
+<br>You cannot run PowerDesigner on a computer where a license server is installed.
+<br>If you are using a stand-alone served or a mobile floating license and you work disconnected from the server, and if your workstation hosts other products that also use Flexlm served licenses, you may have problems when returning your license to the server.
+<br><br>
+
+<li><strong>Dual Monitor</strong>
+<br>When using dual monitors, if you want PowerDesigner to use the last monitor where you have placed a property sheet to display the next one, you will have to set up the following registry key :
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HKEY_LOCAL_MACHINE\SOFTWARE\Sybase\PowerDesigner 15\General] 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"UseLastActivePopupMonitor"="yes"
+<br><br>
+
+<li><strong>Repository Portal</strong>
+<br>The JDBC driver you select in setup or in the Database connection page in configuration parameters must be compatible with the JDK installed on your computer.
+<br>
+<br>Connection to Microsoft SQLServer requires a unified Microsoft JDBC driver that supports connections to all versions of Microsoft SQLServer and can be downloaded from <A HREF=http://www.microsoft.com/downloads/details.aspx?FamilyID=99b21b65-e98f-4a61-b811-19912601fdc9&displaylang=en>http://www.microsoft.com/downloads/details.aspx?FamilyID=99b21b65-e98f-4a61-b811-19912601fdc9&displaylang=en.</A>
+<br><br>
+
+</ul>
+
+</ul>
+
+<h2>Printable documents</h2>
+
+<p>All documentation is available in two formats : on-line help (CHM) & PDF</p>
+If you choose to install PDFs during setup, the Help menu will give you access to these documents through the option Online Documentation. You can view and print them using Acrobat Reader.
+These documents are stored in the &lt;PowerDesigner Install Directory&gt;\Documentation\Printable Docs folder.
+
+<h2>Tools</h2>
+
+The Tools folder in the PowerDesigner directory contains some utilities to help repository installation on authenticated ASA databases and Access database generation and reverse. A text file (tools.txt) describes its content.
+
+
+<h2>VB Script</h2>
+
+<p>The VBScript folder in the PowerDesigner directory contains some Visual Basic scripts that can be used as samples or tools. A text file (VBSreadme.txt) describes its content.
+
+<h2>OLE Automation</h2>
+
+<p>The OLE Automation folder in the PowerDesigner directory contains some samples for using OLE automation to access PowerDesigner objects.
+<p>No executable files are delivered. You need to compile them with a corresponding development environment to use them.
+
+
+<h2>Repository</h2>
+
+<p>PowerDesigner 15.2 is delivered with an authenticated Sybase SQL Anywhere 11.0.0 database, which can be used as a PowerDesigner repository database.
+<p>Please refer to the PowerDesigner Installation Guide or to online help (search for Authenticated keyword) for the installation procedure.
+The Sybase SQL Anywhere engine delivered with PowerDesigner cannot be used for any purpose other than a PowerDesigner repository database.
+
+<h2>Importance of time setting</h2>
+
+PowerDesigner uses modification time comparison in various functions. Be sure that all computers installed with PowerDesigner are set with the accurate time.
+
+
+
+
+<h2>Sybase Web Site</h2>
+
+<p>Find the latest information on PowerDesigner at Sybase's award winning Portal <a href= "http://www.sybase.com">http://www.sybase.com</a> (Go to the 'Products' section and look for 'Enterprise Modeling'), or
+use the following link <a href="http://www.sybase.com/powerdesigner">http://www.sybase.com/powerdesigner</a>
+
+<p>You can access news, white papers, the latest technical documents and other useful downloads from this site. 
+<p>In addition, you can register at the Sybase Portal and select PowerDesigner in your profile - you will then have easier access and can automatically receive all the latest news and technical information on PowerDesigner.
+
+<p>Finally, access the 'Support' section and receive even more technical information on PowerDesigner!
+
+<p>The Help menu of PowerDesigner also gives you access to various relevant pages on the Sybase sites: PowerDesigner page, Support, online books...
+
+
+
+</body>
+
+</html>
